@@ -6,9 +6,13 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky",
-		"eslint:all": "npx eslint . ",
-		"prettier:fix": "npx prettier --write ."
+		"prepare": "husky install",
+		"eslint:all": "npx eslint .",
+		"eslint:fix": "npx eslint . --fix",
+		"prettier:check": "npx prettier --check .",
+		"prettier:fix": "npx prettier --write .",
+		"lint": "npm run eslint:all && npm run prettier:check",
+		"format": "npm run eslint:fix && npm run prettier:fix"
 	},
 	"author": "",
 	"license": "ISC",
@@ -19,6 +23,7 @@
 		"@eslint/js": "^9.16.0",
 		"eslint": "^9.16.0",
 		"globals": "^15.13.0",
-		"prettier": "^3.4.2"
+		"prettier": "^3.4.2",
+		"husky": "^8.0.0"
 	}
 }
