@@ -5,16 +5,16 @@
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 function isEven(n) {
-    if (!Number.isInteger(n)) {
-        return false
-    }
-    return n % 2 == 0
+	if (!Number.isInteger(n)) {
+		return false;
+	}
+	return n % 2 == 0;
 }
-console.log(isEven(4))
-console.log(isEven(3))
-console.log(isEven(2.0))
-console.log(isEven(2.5))
-console.log(isEven(-6))
-console.log(isEven(-3))
-console.log(isEven(0))
-console.log(isEven(1.2))
+console.log(isEven(4));
+console.log(isEven(3));
+console.log(isEven(2.0));
+console.log(isEven(2.5));
+console.log(isEven(-6));
+console.log(isEven(-3));
+console.log(isEven(0));
+console.log(isEven(1.2));
